@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --bluedark: #081b29;
+    --blueli9ght: #00abf0;
+    --colord: #7080bb; /*Color Principal Dymas */
+    --colordk: #0b0829; /*Color Secundario Dymas */
+
+    --color400: #a0b5d9;
+    --color800: #4e5985;
+}
+
+body{
+    background: var(--colordk);
+    color: #ededed;
+}
+
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+} */
+
+/* .logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: .4s;
+}
+*/
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 5rem;
+    position: fixed;
+    z-index: 99;
+    background: transparent;
+    transition: background-color 0.3s;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+.solid {
+    background-color: #0b0829;
+    box-shadow: rgba(60, 64, 67, 0.5) 0px 1px 2px 0px;
+}
+
+.nav-container img {
+    width: 120px;
+}
+
+.flag-button img{
+    width: 24px;
+}
+
+.nav-button {
+    display: none;
+    margin-right: 2rem;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: #7080bb;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-link {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin: 0 .5rem;
+}
+  
+.menu-link:hover {
+    color: #7080bb;
+    text-decoration: none;
+}
+
+.menu-item {
+    margin: 0 1rem;
+}
+ 
+.nav-logo {
+    /* flex: 1; */
+    color: #0b0829;
+}
+  
+.menu-container {
+    display: flex;
+    list-style: none;
+}
+
+/* .header img{
+    width: 120px;
+}
+
+.header::before img{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--colord);
+} */
+
+.home {
+    height: 100vh;
+    background: url('/img/Banner\ -\ Website\ -\ Dymas\ 1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--colord);
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: 1.7s;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--colord);
+    border: 2px solid var(--colord);
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--colordk);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(1):hover{
+    color: var(--colord);
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: var(--colord);
+}
+
+.btn-box a:nth-child(2):hover {
+    color: var(--colordk);
+}
+
+.btn-box a:nth-child(2)::before {
+    background: var(--colord);
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colordk);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--colord);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--colord);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home a:hover{
+    color: var(--colordk);
+    
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colord);
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.home-imgHover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colordk);
+    animation: showRights 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 2;
+}
+
+.home-imgHover:hover {
+    background: var(--colordk);
+    opacity: .8;
+}
+
+@keyframes showRights{
+    100% {
+        width: 0;
+    }
+}
+
+.bio {
+    padding: 6rem 0;
+}
+
+.bio h1 {
+    font-size: 64px;
+    color: #899ccb;
+}
+
+.bio-content {
+    padding: 0 9rem;
+    display: flex;
+} 
+
+.bio-content-text {
+    padding:0 5rem ;
+}
+
+.bio-content p {
+    font-size: 18px;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.bio-content-text span {
+    font-weight: 600;
+    color: #899ccb;
+}
+
+.bio-content img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 7.5px solid #7080bb;
+}
+
+/* Projects ---------------------------------------------------------*/
+.projects {
+    padding: 6rem 0;
+}
+
+.projects h1 {
+    text-align: center;
+    font-size: 64px;
+    color: #899ccb;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 60%;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid var(--colord);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 40%;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  
+  .card-details {
+    flex: 1;
+  }
+  
+  .card h3 {
+    font-size: 36px;
+    /* margin-bottom: 1rem; */
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: var(--colord);
+  }
+  
+  .card-details p {
+    margin: 5px 0;
+    text-align: justify;
+  }
+
+  .card-details a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+    height: 100%;
+    background: var(--colord);
+    border: 2px solid var(--colord);
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--colordk);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-details a:hover{
+    color: var(--colord);
+}
+
+.card-details a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colordk);
+    z-index: -1;
+    transition: .5s;
+}
+
+.card-details a:hover::before {
+    width: 100%;
+}
+
+.button-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+    height: 100%;
+    background: var(--colord);
+    border: 1px solid var(--colord);
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--colordk);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.projects a:hover{
+    color: var(--colord);
+}
+
+.projects a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colordk);
+    z-index: -1;
+    transition: .5s;
+}
+
+.projects a:hover::before {
+    width: 100%;
+}
+
+/* Services ---------------------------------------------------------*/
+.services {
+    padding: 6rem 0;
+}
+
+.services h1 {
+    font-size: 64px;
+    text-align: center;
+    color: #899ccb;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 9rem;
+}
+
+.card-service {
+    width: 350px;
+    margin: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    border: solid 2.5px #7080bb;
+    border-radius: 1rem;
+    transition: all .3s ease;
+}
+
+.card-service:hover {
+    transform: translateY(-1rem);
+}
+
+.card-service img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Gallery -----------------------------------------------------------*/
+.gallery {
+    padding: 6rem 0;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-size: 64px;
+    color: #899ccb;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+
+/* Footer ------------------------------*/
+footer {
+    background-color: #0b0829;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
